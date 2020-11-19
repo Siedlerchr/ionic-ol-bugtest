@@ -1,5 +1,7 @@
 {
   "name": "TestMapBug",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

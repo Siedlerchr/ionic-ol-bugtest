@@ -2,22 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
-
-import { HomePageRoutingModule } from './home-routing.module';
-import { MapModule } from '../map/map.module';
+import { MapComponent } from './map.component';
+import { RouterModule, Routes } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 
+const routes: Routes = [
+  {
+    path: 'map',
+    component: MapComponent
+  }
+];
 
 @NgModule({
+  declarations: [MapComponent],
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    MapModule,
+    FormsModule,
+    RouterModule.forChild(routes),
     TranslocoModule
   ],
-  declarations: [HomePage]
+  exports: [MapComponent]
 })
-export class HomePageModule {}
+export class MapModule { }

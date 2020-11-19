@@ -37,7 +37,9 @@
               },
               {
                 "input": "src/global.scss"
-              }
+              },
+              "./node_modules/ol/ol.css",
+              "./node_modules/ol-ext/dist/ol-ext.css"
             ],
             "scripts": []
           },

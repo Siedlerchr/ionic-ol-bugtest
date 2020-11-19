@@ -1,0 +1,9 @@
+<div #mapElementRef id="map" class="map"></div>
+<div #popupElementRef id="popup" class="ol-popup">
+  <a href="" id="popup-closer" (click)="closePopup('popup')" class="ol-popup-closer"></a>
+  <div id="popup-content" [innerHTML]="popupcontent"></div>
+</div>
+<div #geolocationElementRef id="geolocation_marker"><a href="" (click)="showCurrentGeoPosition()">
+    <img [src]="imagePath">
+  </a>
+</div>
