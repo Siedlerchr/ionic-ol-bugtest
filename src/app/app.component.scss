@@ -1,0 +1,10 @@
+#base-grid {
+    height: 100%;
+    overflow: hidden;
+    --ion-grid-padding: 0;
+    --ion-grid-column-padding: 0;
+  }
+
+  #base-grid > ion-row:first-child {
+    height: 100%;
+  }

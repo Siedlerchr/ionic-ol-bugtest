@@ -5,8 +5,10 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ng-container *transloco="let t">
 
 <ion-content class="ion-padding">
   <app-map #mapcomp (mapAvaiable)="mapReady($event)" [layers]="layers" [popupcontent]="popupcontent"></app-map>
 
 </ion-content>
+</ng-container>

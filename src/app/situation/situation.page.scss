@@ -1,0 +1,55 @@
+#main-grid {
+  --ion-grid-padding: 0;
+  height: 100%;
+}
+
+#main-grid > ion-row:first-child {
+  height: 100%;
+}
+
+#main-menu-col {
+  --ion-grid-column-padding: 0;
+  border-right: 1px solid	var(--ion-color-light-shade);
+}
+
+#main-menu-col ion-item {
+  --padding-start: .5rem;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: .5rem;
+}
+
+#main-menu-col .ios ion-item {
+  --inner-padding-end: 0;
+}
+
+#main-menu-col ion-item ion-icon, ic-icon {
+  margin: 0 .5rem 0 0;
+}
+
+#main-menu-col.compact ion-item ion-icon {
+  margin: 0;
+}
+
+#main-menu-col ion-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#content-row {
+  height: calc(100% - 11.7rem);
+}
+
+#content-row.expanded {
+  height: calc(100% - 1.3rem);
+}
+
+#bottom-panel-row {
+  border-top: 1px solid	var(--ion-color-light-shade);
+  height: 11.7rem;
+}
+
+#bottom-panel-row.collapsed {
+  height: 1.3rem;
+}

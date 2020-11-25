@@ -1,0 +1,52 @@
+<ng-container *transloco="let t">
+
+  <ion-content>
+    <ion-grid id="main-grid">
+      <ion-row nowrap>
+        <ion-col size="auto" id="main-menu-col" >
+          <ion-list [lines]="'inset'">
+            <ion-item routerLink="/situation/overview">
+              <ion-icon name="list-outline" slot="start"></ion-icon>
+              <ion-label >Test1</ion-label>
+            </ion-item>
+            <ion-item routerLink="/situation/map">
+              <ion-icon name="map-outline" slot="start"></ion-icon>
+              <ion-label>Map</ion-label>
+            </ion-item>
+            <ion-item routerLink="/situation/dummy">
+              <ion-icon name="home" slot="start"></ion-icon>
+              <ion-label>Map 2</ion-label>
+            </ion-item>
+            <ion-item routerLink="/situation/dummy">
+              <ion-icon name="walk" slot="start"></ion-icon>
+              <ion-label>Test </ion-label>
+            </ion-item>
+          </ion-list>
+
+          <ion-footer>
+            <ion-toolbar>
+              <ion-buttons slot="end">
+                <ion-button (click)="toggleMenu()">
+                  <ion-icon [name]="'arrow-back'"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-footer>
+        </ion-col>
+
+        <ion-col>
+          <ion-row id="content-row">
+            <ion-col>
+              <ion-router-outlet></ion-router-outlet>
+            </ion-col>
+          </ion-row>
+          <ion-row id="bottom-panel-row">
+            <ion-col>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ng-container>

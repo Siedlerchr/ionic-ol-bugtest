@@ -1,3 +1,13 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-content>
+  <ion-grid id="base-grid">
+    <ion-row nowrap>
+      <ion-col>
+        <ion-router-outlet></ion-router-outlet>
+      </ion-col>
+      <ion-col id="right-sidebar" size-xs="auto" [attr.size-xl]="2">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
 </ion-app>
